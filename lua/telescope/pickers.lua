@@ -324,7 +324,7 @@ function Picker:new(opts)
 
     cache_picker = config.resolve_table_opts(opts.cache_picker, vim.deepcopy(config.values.cache_picker)),
 
-    __scrolling_limit = tonumber(vim.F.if_nil(opts.temp__scrolling_limit, 1000)),
+    __scrolling_limit = tonumber(vim.F.if_nil(opts.temp__scrolling_limit, 2500)),
 
     __locations_input = vim.F.if_nil(opts.__locations_input, false),
   }, self)
